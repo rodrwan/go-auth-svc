@@ -1,0 +1,21 @@
+scalar Time
+
+type Auth {
+    access_token: String!
+    refresh_token: String!
+}
+
+type Mutation {
+  create(reference_id: String!, payload: String!): Auth!
+  refresh(access_token: String!, refresh_token: String!): Auth!
+  delete(payload: String!): Auth!
+}
+
+type Query {
+  get(token: String!): String!
+}
+
+# type Subscription {
+#   messagePosted(user: String!): Message!
+#   userJoined(user: String!): String!
+# }
