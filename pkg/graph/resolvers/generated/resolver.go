@@ -6,7 +6,7 @@ import (
 	"context"
 
 	auth "github.com/rodrwan/go-auth-svc"
-	"github.com/rodrwan/go-auth-svc/graph"
+	"github.com/rodrwan/go-auth-svc/pkg/graph"
 )
 
 type Resolver struct{}
